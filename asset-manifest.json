@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/testing-website-mpa/static/css/main.e6c00018.css",
+    "main.js": "/testing-website-mpa/static/js/main.78d076a6.js",
+    "index.html": "/testing-website-mpa/index.html",
+    "main.e6c00018.css.map": "/testing-website-mpa/static/css/main.e6c00018.css.map",
+    "main.78d076a6.js.map": "/testing-website-mpa/static/js/main.78d076a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c00018.css",
+    "static/js/main.78d076a6.js"
+  ]
+}
