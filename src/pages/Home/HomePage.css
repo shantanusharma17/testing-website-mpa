@@ -1,0 +1,58 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .agent-intro {
+    display: flex;
+    align-items: center;
+  }
+  
+  .agent-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .agent-info {
+    flex-grow: 1;
+  }
+  
+  .agent-info h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .agent-info p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .ratings-section {
+    margin-top: 20px;
+  }
+  
+  .star-ratings {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .star-ratings span {
+    color: #ffd700; /* Yellow color for stars */
+  }
+  
+  .cta-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta-link:hover {
+    text-decoration: underline;
+  }
+  

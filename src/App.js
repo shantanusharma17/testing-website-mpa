@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/HomePage';
+import PropertiesPageByInternalId from './pages/PropertiesPageByInternalId/PropertiesPageByInternalId';
+import ListingPageByInternalId from './pages/ListingPageByInternalId/ListingPageByInternalId';
+import Contact from './pages/Contact/ContactPage';
+import NavigationHeader from './components/NavigationHeader/NavigationHeader'; // Updated import
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavigationHeader /> {/* Include the NavigationHeader component */}
+      <Routes>
+        <Route path="/testing-website-mpa/" element={<Home />} />
+        <Route path="/testing-website-mpa/properties-id" element={<PropertiesPageByInternalId />} />
+        <Route path="/testing-website-mpa/properties-id/:id" element={<ListingPageByInternalId />} />
+        <Route path="/testing-website-mpa/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
