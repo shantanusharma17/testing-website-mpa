@@ -1,7 +1,7 @@
 // src/App.js
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/HomePage';
 import PropertiesPageByInternalId from './pages/PropertiesPageByInternalId/PropertiesPageByInternalId';
 import ListingPageByInternalId from './pages/ListingPageByInternalId/ListingPageByInternalId';
@@ -13,10 +13,10 @@ function App() {
     <Router>
       <NavigationHeader /> {/* Include the NavigationHeader component */}
       <Routes>
-        <Route path="/testing-website-mpa/" element={<Home />} />
-        <Route path="/testing-website-mpa/properties-id" element={<PropertiesPageByInternalId />} />
-        <Route path="/testing-website-mpa/properties-id/:id" element={<ListingPageByInternalId />} />
-        <Route path="/testing-website-mpa/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/properties-id" element={<PropertiesPageByInternalId />} />
+        <Route path="/properties-id/:id" element={<ListingPageByInternalId />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
