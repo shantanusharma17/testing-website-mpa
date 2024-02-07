@@ -1,0 +1,97 @@
+/* src/pages/PropertiesPage.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased minimum size to 300px */
+    grid-gap: 20px;
+  }
+  
+  .properties-grid__item-wrap {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Increased border-radius for a rounded look */
+    transition: transform 0.3s ease;
+    height: 100%; /* Ensure that items take up the full height of the grid */
+  }
+  
+  .properties-grid__item-wrap:hover {
+    transform: scale(1.05);
+  }
+  
+  .properties-grid__item {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .properties-grid__img {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px; /* Rounded corners for the top-left */
+    border-top-right-radius: 10px; /* Rounded corners for the top-right */
+  }
+  
+  .status-tile {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .properties-grid__img img {
+    width: 100%;
+    height: 200px; /* Increased height for a larger image */
+    object-fit: cover;
+  }
+  
+  .properties-grid__header {
+    padding: 15px; /* Increased padding for better spacing */
+    background-color: #fff; /* White background for better contrast */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .properties-grid__price {
+    font-size: 24px; /* Larger font size for the price */
+    font-weight: bold;
+  }
+  
+  .properties-grid__address {
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  .properties-grid__amenities {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .properties-grid__footer {
+    padding: 15px; /* Increased padding for better spacing */
+    margin-top: auto;
+    text-align: right;
+    background-color: #f9f9f9; /* Light gray background for better contrast */
+    border-bottom-left-radius: 10px; /* Rounded corners for the bottom-left */
+    border-bottom-right-radius: 10px; /* Rounded corners for the bottom-right */
+  }
+  
+  .link {
+    color: #3498db;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
