@@ -1,0 +1,46 @@
+/* LoginPage.css */
+
+.container {
+    max-width: 400px; /* Adjusted max-width for better readability */
+    margin: 50px auto; /* Increased top margin for better vertical centering */
+    padding: 40px; /* Increased padding for more space around the content */
+    background-color: #ffffff; /* Lighter background color for better contrast */
+    border: 1px solid #dddddd; /* Added border for a defined look */
+    border-radius: 8px; /* Added border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for depth */
+  }
+  
+  h1 {
+    text-align: center; /* Centered heading for better alignment */
+    margin-bottom: 30px; /* Increased bottom margin for spacing */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px; /* Adjusted margin for spacing */
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px; /* Increased bottom margin for spacing */
+    border: 1px solid #cccccc; /* Added border for input fields */
+    border-radius: 4px; /* Added border-radius for rounded corners */
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px; /* Increased padding for better button size */
+    border: none;
+    border-radius: 4px; /* Added border-radius for rounded corners */
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  

@@ -35,7 +35,7 @@ const Home = () => {
             Whether you're looking to buy, sell, or just explore the market, I'm here to guide you every step of the way.
           </p>
           <p>
-            <a href="/testing-website-mpa/contact" className="cta-link">Talk with me</a>
+            <a href="/testing-website-mpa#/contact" className="cta-link">Talk with me</a>
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ import './ContactPage.css';
 
 const ContactPage = () => {
   return (
-    <div className="contact-container">
+    <div className="container">
       <h2>Contact Us</h2>
       <ContactForm />
     </div>

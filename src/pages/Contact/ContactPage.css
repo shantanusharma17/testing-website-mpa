@@ -1,9 +1,13 @@
 /* src/pages/ContactPage/ContactPage.css */
 
-.contact-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.container {
+    max-width: 400px; /* Adjusted max-width for better readability */
+    margin: 50px auto; /* Increased top margin for better vertical centering */
+    padding: 40px; /* Increased padding for more space around the content */
+    background-color: #ffffff; /* Lighter background color for better contrast */
+    border: 1px solid #dddddd; /* Added border for a defined look */
+    border-radius: 8px; /* Added border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for depth */
   }
   
   h2 {
