@@ -11,7 +11,7 @@ const PropertiesPageByAddress = () => {
         {propertiesData.map((property) => (
           <div key={property.id} className="properties-grid__item-wrap">
             <a
-              href={`/testing-website-mpa#/properties-address/${formatAddress(property.address)}`}
+              href={`/testing-website-mpa#/listings/${formatAddress(property.address)}`}
               className="properties-grid__item"
             >
               <div className="properties-grid__img">

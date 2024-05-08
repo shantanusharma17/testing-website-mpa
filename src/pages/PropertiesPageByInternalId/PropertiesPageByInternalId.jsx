@@ -11,7 +11,7 @@ const PropertiesPageByInternalId = () => {
       <div className="properties-grid">
         {propertiesData.map((property) => (
           <div key={property.id} className="properties-grid__item-wrap">
-            <a href={`/testing-website-mpa#/properties-id/${property.id}`} className="properties-grid__item">
+            <a href={`/testing-website-mpa#/properties/${property.id}`} className="properties-grid__item">
               <div className="properties-grid__img">
                 <span className="status-tile">{property.status}</span>
                 <img src={property.image} alt={property.name} />

@@ -15,16 +15,42 @@ const ListingPageByAddress = () => {
     return <div>Property not found</div>;
   }
 
+  // update template to match
+  // - ['h3,h5'] selector with 'Area & Lot' to verify pixel mls id collection
+  // - ['h1'] selector to verify pixel listing address collection
   return (
     <div className="container">
-      <h2>{property.name} Details</h2>
+      <div>
+        <h1>{property.name}</h1>
+        <p>{property.address}</p>
+      </div>
       <div className="property-details">
         <img src={property.image} alt={property.name} />
-        <p>Status: {property.status}</p>
-        <p>Price: {property.price}</p>
-        <p>Address: {property.address}</p>
-        <p>MLS ID: {property.mls_id || '-'}</p>
-        <p>Amenities: {property.amenities}</p>
+        <div>
+          <h3>Area & Lot</h3>
+          <ul>
+            <li>
+              <p>Status</p>
+              <p>{property.status}</p>
+            </li>
+            <li>
+              <p>Price</p>
+              <p>{property.price}</p>
+            </li>
+            <li>
+              <p>Address</p>
+              <p>{property.address}</p>
+            </li>
+            <li>
+              <p>MLS ID</p>
+              <p>{property.mls_id || '-'}</p>
+            </li>
+            <li>
+              <p>Amenities</p>
+              <p>{property.amenities}</p>
+            </li>
+          </ul>
+        </div>
         {/* Add more details as needed */}
       </div>
       <br />

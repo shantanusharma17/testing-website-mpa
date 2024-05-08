@@ -15,21 +15,43 @@ const ListingPageByInternalId = () => {
     return <div>Property not found</div>;
   }
 
+  // update template to match
+  // - [#description h5] selector to verify pixel mls id collection
+  // - [section#map] selector to verify pixel listing address collection
   return (
     <div className="container">
-      <h2>{property.name} Details</h2>
-      <div className="property-details">
-        <img src={property.image} alt={property.name} />
-        <p>Status: {property.status}</p>
-        <p>Price: {property.price}</p>
-        <p>Address: {property.address}</p>
-        <p>MLS ID: {property.mls_id || '-'}</p>
-        <p>Amenities: {property.amenities}</p>
+      <section id="map">
+        <h2>{property.name} Details</h2>
+        {/* collected at properties.cxlp.listingAddress */}
+        <p>{property.address}</p>
+      </section>
+      <div className="property-details" id="description">
+        <img src={property.image} alt={property.name}/>
+        <div>
+          <h5>Status</h5>
+          <span>{property.status}</span>
+        </div>
+        <div>
+          <h5>Price</h5>
+          <span>{property.price}</span>
+        </div>
+        <div>
+          <h5>Address</h5>
+          <span>{property.address}</span>
+        </div>
+        <div>
+          <h5>MLS ID</h5>
+          <span>{property.mls_id || '-'}</span>
+        </div>
+        <div>
+          <h5>Amenities</h5>
+          <span>{property.amenities}</span>
+        </div>
         {/* Add more details as needed */}
       </div>
-      <br />
+      <br/>
       <h2>Request more information</h2>
-      <ContactForm />
+      <ContactForm/>
     </div>
   );
 };
