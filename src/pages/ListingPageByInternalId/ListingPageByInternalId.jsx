@@ -1,6 +1,7 @@
 // src/pages/ListingPageByInternalId.jsx
 
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 import ContactForm from '../Contact/ContactPage';
 import propertiesData from '../../data/propertiesData';
@@ -11,9 +12,21 @@ const ListingPageByInternalId = () => {
   const property = propertiesData.find((item) => String(item.id) === id);
 
   if (!property) {
-    // Handle the case when the property is not found
-    return <div>Property not found</div>;
+    return (
+      <div>
+        <Helmet>
+          <title>Property Not Found | Compass Real Estate</title>
+        </Helmet>
+        Property not found
+      </div>
+    );
   }
+
+  return (
+    <div className="container">
+      <Helmet>
+        <title>{`${property.name} | Compass Real Estate`}</title>
+      </Helmet>
 
   // update template to match
   // - [#description h5] selector to verify pixel mls id collection

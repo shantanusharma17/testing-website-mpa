@@ -1,12 +1,16 @@
 // src/pages/PropertiesPageByInternalId.jsx
 
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import propertiesData from '../../data/propertiesData';
 import './PropertiesPageByInternalId.css';
 
 const PropertiesPageByInternalId = () => {
   return (
     <div className="container">
+      <Helmet>
+        <title>Properties | Compass Real Estate</title>
+      </Helmet>
       <h2>Featured Properties By Internal ID</h2>
       <div className="properties-grid">
         {propertiesData.map((property) => (

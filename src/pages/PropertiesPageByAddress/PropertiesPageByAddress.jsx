@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './PropertiesPageByAddress';
 import propertiesData from '../../data/propertiesData';
 import formatAddress from '../../utils/formatAddress';
@@ -6,6 +7,9 @@ import formatAddress from '../../utils/formatAddress';
 const PropertiesPageByAddress = () => {
   return (
     <div className="container">
+      <Helmet>
+        <title>Listings | Compass Real Estate</title>
+      </Helmet>
       <h2>Featured Properties By Address</h2>
       <div className="properties-grid">
         {propertiesData.map((property) => (

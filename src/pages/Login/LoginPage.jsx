@@ -1,10 +1,14 @@
 import React from 'react';
-import Login from '../../components/LoginForm/LoginForm'; // Adjust the path
-import './LoginPage.css'; // Import the CSS file
+import { Helmet } from 'react-helmet';
+import Login from '../../components/LoginForm/LoginForm';
+import './LoginPage.css';
 
 const LoginPage = () => {
   return (
-    <div className="container"> {/* Apply the container class */}
+    <div className="container">
+      <Helmet>
+        <title>Login | Compass Real Estate</title>
+      </Helmet>
       <Login />
     </div>
   );

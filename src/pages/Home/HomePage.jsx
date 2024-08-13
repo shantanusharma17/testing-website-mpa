@@ -1,11 +1,15 @@
 // src/pages/Home.jsx
 
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './HomePage.css';
 
 const Home = () => {
   return (
     <div className="container">
+      <Helmet>
+        <title>Home | Compass Real Estate</title>
+      </Helmet>
       <div className="agent-intro">
         <img
           src="https://placekitten.com/200/200"  // Placeholder image, replace with actual photo URL
