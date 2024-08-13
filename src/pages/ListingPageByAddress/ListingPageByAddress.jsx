@@ -12,26 +12,20 @@ const ListingPageByAddress = () => {
 
   if (!property) {
     return (
-      <div>
-        <Helmet>
-          <title>Property Not Found | Compass Real Estate</title>
-        </Helmet>
-        Property not found
-      </div>
+        <div>
+          <Helmet>
+            <title>Property Not Found | Compass Real Estate</title>
+          </Helmet>
+          <h1>Property not found</h1>
+        </div>
     );
   }
 
   return (
-    <div className="container">
-      <Helmet>
-        <title>{`${property.name} | Compass Real Estate`}</title>
-      </Helmet>
-
-  // update template to match
-  // - ['h3,h5'] selector with 'Area & Lot' to verify pixel mls id collection
-  // - ['h1'] selector to verify pixel listing address collection
-  return (
-    <div className="container">
+      <div className="container">
+        <Helmet>
+          <title>{`${property.name} | Compass Real Estate`}</title>
+        </Helmet>
       <div>
         <h1>{property.name}</h1>
         <p>{property.address}</p>

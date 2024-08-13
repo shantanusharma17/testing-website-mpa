@@ -30,9 +30,6 @@ const ListingPageByAddressMls = () => {
       <Helmet>
         <title>{`${property.name} | Compass Real Estate`}</title>
       </Helmet>
-
-  return (
-    <div className="container">
       <h2>{property.name} Details</h2>
       <div className="property-details">
         <img src={property.image} alt={property.name} />

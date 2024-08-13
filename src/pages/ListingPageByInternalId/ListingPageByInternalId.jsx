@@ -27,12 +27,6 @@ const ListingPageByInternalId = () => {
       <Helmet>
         <title>{`${property.name} | Compass Real Estate`}</title>
       </Helmet>
-
-  // update template to match
-  // - [#description h5] selector to verify pixel mls id collection
-  // - [section#map] selector to verify pixel listing address collection
-  return (
-    <div className="container">
       <section id="map">
         <h2>{property.name} Details</h2>
         {/* collected at properties.cxlp.listingAddress */}
